@@ -21,7 +21,7 @@ namespace testDuration
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            duration.Value = 500;
+            duration.Value = 300;
             labDuration.DataBindings.Add("Text", duration.timer, "DisplayAll");
             timer1.Enabled = true;
         }
