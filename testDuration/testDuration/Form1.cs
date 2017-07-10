@@ -16,11 +16,12 @@ namespace testDuration
         {
             InitializeComponent();
         }
-        DurationSettings duration = new DurationSettings();
+
+        private DurationSettings duration = new DurationSettings();
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            duration.Value = 210;
+            duration.Value = 500;
             labDuration.DataBindings.Add("Text", duration.timer, "DisplayAll");
             timer1.Enabled = true;
         }
